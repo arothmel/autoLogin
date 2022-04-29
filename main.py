@@ -25,6 +25,7 @@ def main():
   time.sleep(2)
   driver.find_element(by="id", value="id_password").send_keys("automatedautomated" + Keys.RETURN)
   time.sleep(2)
+  # home button doesn't have ID. use xpath
   driver.find_element(by="xpath", value="/html/body/nav/div/a").click()
   print(driver.current_url)
 
